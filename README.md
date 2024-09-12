@@ -2,10 +2,9 @@
   <img src="https://github.com/vbwanere/vbwanere/blob/main/chip-package-board_co-design-Zuken-Americas.jpg" height="230"/>
 </p>
 <hr>
-<!-- <h1 align="center">I'm <a href="https://github.com/vbwanere">Vaibhav Wanere<a><img src="https://github.com/Kathryn-Jie/Kathryn-Jie/blob/main/wave.gif" width="60px"/></h1> -->
-<h1 align="center">I'm <a href="https://github.com/vbwanere">Vaibhav Wanere<a></h1>
+<h1 align="center">I'm <a href="https://github.com/vbwanere">Vaibhav Wanere<a><img src="https://github.com/Kathryn-Jie/Kathryn-Jie/blob/main/wave.gif" width="60px"/></h1>
 <Br>
-<h1>About Me! 😎</h1>
+<h1>About Me!</h1>
 
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 - 🤖: Passionate about Microelectronics Packaging and Manufacturing using Robotics.

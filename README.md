@@ -6,13 +6,13 @@
 <Br>
 <h1>About Me! 😎</h1>
 
-- 🏫: .
-- 🔭: .
-- 🌱: . 🧠💻🤖
-- 🤔: ! 😅
-- 💬: . 📊📈🤖🧠
-- 😄  
-- ⚡  ! 
+- 🌱: Studied Mechanical Engineering at University of Pennsylvania.
+- 🤖: Passionate about Microelectronics Packaging and Manufacturing using Robotics.
+- 💻: Here on GitHub to be an efficent Mechanical Engineer who can exploit and leverage code. 🧠🤖
+%- 📈🤔🏫: ! 😅
+%- 💬: . 📊🤖
+%- 😄 🧠🔭 
+%- ⚡  ! 
   
 <hr>
 <Br>

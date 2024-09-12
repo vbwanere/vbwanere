@@ -11,7 +11,8 @@
 - 💻: Utlizing GitHub to be an efficent Mechanical Engineer who can exploit and leverage code for better.
   
 <hr>
-<!-- <Br> -->
+<Br>
+
 <h1 align="center">Let's connect!</h1>
 <Br>
 <p align="center">

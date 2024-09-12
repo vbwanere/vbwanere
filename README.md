@@ -9,11 +9,11 @@
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 - 🤖: Passionate about Microelectronics Packaging and Manufacturing using Robotics.
 - 💻: Utlizing GitHub to be an efficent Mechanical Engineer who can exploit and leverage code for better.
-//- 🧠🤖
-//- 📈🤔🏫: ! 😅
-//- 💬: . 📊🤖
-//- 😄 🧠🔭 
-//- ⚡  ! 
+  [//]- 🧠🤖
+- 📈🤔🏫: ! 😅
+- 💬: . 📊🤖
+- 😄 🧠🔭 
+- ⚡  ! 
   
 <hr>
 <Br>

@@ -11,7 +11,9 @@
 <h1 align="center">Let's connect!</h1>
 <Br>
 <p align="center">
-<a href="https://www.linkedin.com/in/vbwanere/" target="blank"><img align="center" src="https://img.shields.io/badge/Vaibhav Wanere-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> &nbsp;&nbsp;&nbsp;  <a href="mailto:vbwanere@yahoo.com" target="blank"><img align="center" src="https://img.shields.io/badge/vbwanere@yahoo.com-6001D2?style=for-the-badge&logo=yahoo&logoColor=white" /></a>    &nbsp;&nbsp;&nbsp;       <a href="https://x.com/vbwanere" target="blank"><img align="center" src="https://img.shields.io/badge/vbwanere-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/vbwanere/" target="blank"><img align="center" src="https://img.shields.io/badge/Vaibhav Wanere-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> &nbsp;&nbsp;&nbsp;
+<a href="mailto:vbwanere@yahoo.com" target="blank"><img align="center" src="https://img.shields.io/badge/vbwanere@yahoo.com-6001D2?style=for-the-badge&logo=yahoo&logoColor=white" /></a> &nbsp;&nbsp;&nbsp;
+<a href="https://x.com/vbwanere" target="blank"><img align="center" src="https://img.shields.io/badge/vbwanere-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
 </p>
 </h1>
 <h1 align="center">Tools I use! 🛠️</h1>

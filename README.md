@@ -13,7 +13,7 @@
 <Br>
 <p align="center">
 <a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" height="40"/></a>
-<a href="vbwanere@yahoo.com" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Yahoo%21_Mail_%282019%29.svg/1000px-Yahoo%21_Mail_%282019%29.svg.png" alt="yahoo!mail" width="230" height="40"/></a>  
+<a href="mailto:vbwanere@yahoo.com" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Yahoo%21_Mail_%282019%29.svg/1000px-Yahoo%21_Mail_%282019%29.svg.png" alt="yahoo!mail" width="230" height="40"/></a>  
 </p>
 </h1>
 <h1 align="center">Tools I use! 🛠️</h1>

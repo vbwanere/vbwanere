@@ -3,7 +3,7 @@
 </p>
 <!-- <hr> -->
 <h1 align="center">I'm <a href="https://github.com/vbwanere">Vaibhav Wanere<a><img src="https://github.com/Kathryn-Jie/Kathryn-Jie/blob/main/wave.gif" width="60px"/></h1>
-<h1>I am a Mechanical Engineer by training and nature and passionate about Microelectronics Packaging.</h1>
+I am a Mechanical Engineer by training and nature and passionate about Microelectronics Packaging.
 <Br>
 <h1>About Me!</h1>
 

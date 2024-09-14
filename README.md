@@ -13,7 +13,7 @@
 <Br>
 <p align="center">
 <a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" height="40"/></a>
-<a href="https://x.com/vbwanere" target="_blank" rel="noreferrer"> <img src="https://www.google.com/imgres?q=x%20logo&imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fnew-2023-twitter-logo-x-icon-design_1017-45418.jpg%3Fsize%3D338%26ext%3Djpg%26ga%3DGA1.1.2008272138.1726272000%26semt%3Dais_hybrid&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fx-logo&docid=GvTzEXG6NTOsbM&tbnid=QaVS-hYafpd60M&vet=12ahUKEwjO3LabrcOIAxWiMVkFHaXQPJYQM3oECHsQAA..i&w=338&h=338&hcb=2&ved=2ahUKEwjO3LabrcOIAxWiMVkFHaXQPJYQM3oECHsQAA" alt="X" width="40" height="40"/></a>
+<a href="https://x.com/vbwanere" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg" alt="X" width="40" height="40"/></a>
 <a href="mailto:vbwanere@yahoo.com" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Yahoo%21_Mail_%282019%29.svg/1000px-Yahoo%21_Mail_%282019%29.svg.png" alt="yahoo!mail" width="230" height="40"/></a>  
 </p>
 </h1>

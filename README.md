@@ -27,7 +27,7 @@
 <p align="center">
 <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
 <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a>
-<a href="https://www.ansys.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/ansys/.github/blob/main/images/Favicons/favicon.svg" alt="comsol" width="40" height="40"/> </a>  
+<a href="https://www.ansys.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/ansys/.github/blob/main/images/Favicons/favicon.svg" alt="comsol" width="50" height="50"/> </a>  
 <a href="https://www.comsol.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Comsol_logo.svg" alt="comsol" width="170" height="40"/> </a>
 <a href="https://www.epfl.ch/labs/esl/research/open-source-software-projects/3d-ice/" target="_blank" rel="noreferrer"> <img src="https://github.com/vbwanere/vbwanere/blob/main/3d_ice.bmp" alt="comsol" width="50" height="40"/> </a>
 <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a>

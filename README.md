@@ -8,11 +8,12 @@
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 - 🤖: Passionate about Microelectronics Packaging and Manufacturing using Robotics.
 - 💻: Utlizing GitHub to be an efficent Mechanical Engineer who can exploit and leverage code for better.
+
 <h1 align="center">Let's connect!</h1>
 <Br>
 <p align="center">
 <a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" height="40"/> </a>
-<a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Yahoo%21_Mail_%282019%29.svg" alt="yahoo!mail" width="40" height="40"/> </a>  
+<a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Yahoo%21_Mail_%282019%29.svg" alt="yahoo!mail" width="300" height="40"/> </a>  
 </p>
 </h1>
 <h1 align="center">Tools I use! 🛠️</h1>

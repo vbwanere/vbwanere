@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/vbwanere/vbwanere/blob/main/chip-package-board_co-design-Zuken-Americas.jpg" height="280"/>
+  <img src="https://github.com/vbwanere/vbwanere/blob/main/chip-package-board_co-design-Zuken-Americas1.jpg" height="280"/>
 </p>
 <!-- <hr> -->
 <h1 align="center">Hello fellow coders! I'm <a href="https://www.linkedin.com/feed/">Vaibhav Wanere<a>.</h1>

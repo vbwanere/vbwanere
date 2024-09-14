@@ -3,7 +3,6 @@
 </p>
 <!-- <hr> -->
 <h1 align="center">I'm <a href="https://github.com/vbwanere">Vaibhav Wanere<a>.</h1>
-<Br>
 <h1>About Me!</h1>
 
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.

@@ -5,6 +5,7 @@
 <h1 align="center">Hello fellow coders! I'm <a href="https://github.com/vbwanere">Vaibhav Wanere<a>.</h1>
   
 <h1>About Me!</h1>
+
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 - 🤖: Passionate about Microelectronics Packaging and Manufacturing using Robotics.
 - 💻: Utlizing GitHub to be an efficent Mechanical Engineer who can exploit and leverage code for better.

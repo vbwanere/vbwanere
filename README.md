@@ -15,13 +15,6 @@
 </p>
 <Br>
 </h1>
-
-<h1 align="center">My Skills!</h1>
-<Br>
-  
-<hr>
-<Br>
-
 <h1 align="center">Tools I use! 🛠️</h1>
 <Br>
 <p align="center">

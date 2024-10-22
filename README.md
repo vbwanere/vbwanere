@@ -36,6 +36,8 @@
   
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=homography-from-scratch
 )](https://github.com/vbwanere/homography-from-scratch)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=Pick-and-place-using-Franka-Panda-arm
+)](https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm)
 
 <Br>
 <hr>

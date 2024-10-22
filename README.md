@@ -6,7 +6,7 @@
 <h1>About Me!</h1>
 
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
-- 🤖: Passionate about Nanofabrication and Microelectronics Packaging.
+- 🤖: Passionate about Nanofabrication, Microelectronics Packaging and Robotics.
 - 💻: Utlizing GitHub to be an efficent Mechanical Engineer who can leverage code for better.
 
 <h1 align="center">Let's connect!</h1>

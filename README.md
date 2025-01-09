@@ -7,7 +7,7 @@
 
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 - 🤖: Passionate about Precision Machining, Robotics, IoT, IC Design and Nanofabrication.
-- 💻: Utlizing GitHub to be an efficent Mechanical Engineer who can leverage code for better.
+- 💻: Utlizing GitHub to be an efficent Engineering Problem Solver by leveraging Source Codes.
 
 <h1 align="center">Let's connect!</h1>
 <Br>

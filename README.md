@@ -34,11 +34,9 @@
 <h1>Some of my Projects! 🎨</h1>
 <Br>
   
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=homography-from-scratch
-)](https://github.com/vbwanere/homography-from-scratch)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=Pick-and-place-using-Franka-Panda-arm
-)](https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm)
-
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=homography-from-scratch)](https://github.com/vbwanere/homography-from-scratch)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=Pick-and-place-using-Franka-Panda-arm)](https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=Academic-Projects)](https://github.com/vbwanere/Academic-Projects)
 <Br>
 <hr>
 <h1>GitHub Stats! 📊</h1>

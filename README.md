@@ -6,7 +6,7 @@
 <h1>About Me!</h1>
 
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.
-- 🤖: Passionate about Precision Machining, Robotics, IoT, IC Design and Nanofabrication.
+- 🤖: Passionate about Precision Machining, Robotics, IoT and Nanofabrication.
 - 💻: Utlizing GitHub to be an efficent Engineering Problem Solver by leveraging Source Codes.
 
 <h1 align="center">Let's connect!</h1>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" height="300"/>
+  <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" height="400"/>
 </p>
 <!-- <hr> -->
 <h1 align="center">Hello fellow coders! I'm <a href="https://www.linkedin.com/feed/">Vaibhav Wanere<a>.</h1>

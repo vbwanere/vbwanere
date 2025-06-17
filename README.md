@@ -5,9 +5,9 @@
 <h1 align="center">Hello fellow coders! I'm <a href="https://www.linkedin.com/feed/">Vaibhav Wanere<a>.</h1>
 <h1>About Me!</h1>
 
-- 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 - 🤖: Passionate about Precision Machining, Robotics, IoT and Nanofabrication.
 - 💻: Utlizing GitHub to be an efficent Engineering Problem Solver by leveraging Source Codes.
+- 🌱: Studied Mechanical Engineering at University of Pennsylvania.
 
 <h1 align="center">Let's connect!</h1>
 <Br>

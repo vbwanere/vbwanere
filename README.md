@@ -26,19 +26,28 @@
 <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/></a>
 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a>
 </p>
-<h1>Some of my Projects! 🎨</h1>
-<Br>
-  
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=Pick-and-place-using-Franka-Panda-arm)](https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=PLC-Programming-CLICK_PLUS-C2-01CPU
-)](https://github.com/vbwanere/PLC-Programming-CLICK_PLUS-C2-01CPU)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=homography-from-scratch)](https://github.com/vbwanere/homography-from-scratch)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=vbwanere&repo=Academic-Projects)](https://github.com/vbwanere/Academic-Projects)
-<Br>
+
+<h1 align="center">Some of my Projects! 🎨</h1>
+<br>
+
+<p align="center">
+  <a href="https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm">
+    <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" width="420px" />
+  </a>
+  <a href="https://github.com/vbwanere/homography-from-scratch">
+    <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" width="420px" />
+  </a>
+  <a href="https://github.com/vbwanere/Academic-Projects">
+    <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" width="420px" />
+  </a>
+</p>
+
+<br>
 <hr>
-<h1>GitHub Stats! 📊</h1>
-<Br>
-  
+<h1 align="center">GitHub Stats! 📊</h1>
+<br>
+
+
 [![Github stats](https://github-readme-stats.vercel.app/api?username=vbwanere&show_icons=true&theme=merko)](https://github.com/vbwanere/github-readme-stats) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vbwanere&layout=compact&theme=merko)](https://github.com/vbwanere/github-readme-stats)
 
  

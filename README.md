@@ -5,6 +5,7 @@
 <h1 align="center">Hello fellow coders! I'm <a href="https://www.linkedin.com/feed/">Vaibhav Wanere<a>.</h1>
 <h1>About Me!</h1>
 
+- 🤖: Building things in Precision Machining, Robotics and IoT domain.
 - 🤖: Passionate about Precision Machining, Robotics, IoT and Nanofabrication.
 - 💻: Utlizing GitHub to be an efficent Engineering Problem Solver by leveraging Source Codes.
 - 🌱: Studied Mechanical Engineering at University of Pennsylvania.

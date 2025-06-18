@@ -28,9 +28,6 @@
   <a href="https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm">
     <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" width="320px" />
   </a>
-  <a href="https://github.com/vbwanere/homography-from-scratch">
-    <img src="https://github.com/vbwanere/homography-from-scratch/blob/main/results/frame_0.png" width="320px" />
-  </a>
 </p>
 
 <br>

@@ -2,7 +2,7 @@
   <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" height="400"/>
 </p>
 <!-- <hr> -->
-<h1 align="center">Hello fellow coders! I'm <a href="https://www.linkedin.com/feed/">Vaibhav<a>.</h1>
+<h1 align="center">Hello fellow coders!</h1>
 <p align="center">
 <a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" height="40"/></a>
 <a href="https://x.com/vbwanere" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg" alt="X" width="42" height="42"/></a>

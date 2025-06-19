@@ -7,7 +7,7 @@
 <a href="https://www.linkedin.com/in/vbwanere/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" height="40"/></a>
 <a href="https://x.com/vbwanere" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg" alt="X" width="42" height="42"/></a>
 <a href="mailto:vbwanere@yahoo.com" target="_blank" rel="noreferrer"> <img src="https://github.com/vbwanere/vbwanere/blob/main/yahoo.jpeg" alt="yahoo!mail" width="42" height="42"/></a>
-<a href="https://www.youtube.com/@vbwanere" target="_blank" rel="noreferrer"> <img src="https://github.com/vbwanere/vbwanere/blob/main/yt.png" alt="youtube" width="42" height="42"/></a>
+<a href="https://www.youtube.com/@vbwanere" target="_blank" rel="noreferrer"> <img src="https://github.com/vbwanere/vbwanere/blob/main/yt.png" alt="youtube" width="42"/></a>
 </p>
   
 - 🛠️: Building things in Precision Machining, Robotics and IoT domain.

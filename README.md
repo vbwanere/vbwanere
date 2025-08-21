@@ -26,7 +26,7 @@
 
 <h1>Projects! 🎨</h1>
 <p align="center">
-  <a href="https://github.com/vbwanere/Pick-and-place-using-Franka-Panda-arm">
+  <a href="https://github.com/vbwanere/Academic-Projects/tree/main/Pick-and-place-using-Franka-Panda-arm">
     <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" width="320px" />
   </a>
    <a href="https://github.com/vbwanere/Academic-Projects/tree/main/Mini_AMR">

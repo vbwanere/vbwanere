@@ -33,15 +33,6 @@
   </a>
 </p>
 
-<br>
-<hr>
-<h1>GitHub Stats! 📊</h1>
-<br>
-
-
-[![Github stats](https://github-readme-stats.vercel.app/api?username=vbwanere&show_icons=true&theme=merko)](https://github.com/vbwanere/github-readme-stats) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vbwanere&layout=compact&theme=merko)](https://github.com/vbwanere/github-readme-stats)
-
- 
 <Br>
 <hr>
 <Br>

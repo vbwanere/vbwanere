@@ -10,9 +10,8 @@
 <a href="https://www.youtube.com/@vbwanere" target="_blank" rel="noreferrer"> <img src="https://github.com/vbwanere/vbwanere/blob/main/yt.png" alt="youtube" width="45"/></a>
 </p>
   
-- 🛠️: Building things in Precision Machining, Robotics and IoT domain.
-- 💻: Utlizing GitHub to be an efficent Engineering Problem Solver by leveraging Source Codes.
-- 🎓 Alumnus of the University of Pennsylvania – Mechatronic and Robotic Systems.
+- 🛠️: Building things in Robotics, Industrial IoT and Precision Machining.
+- 💻: Utlizing GitHub to be an efficent Engineering Problem Solver by leveraging source codes.
 
 
 <h1>Tools I use! 🛠️</h1>

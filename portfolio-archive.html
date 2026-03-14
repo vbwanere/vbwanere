@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering Portfolio — Vaibhav</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --grid-color: rgba(70, 130, 180, 0.12);
+    --grid-strong: rgba(70, 130, 180, 0.22);
+    --accent: #0a7abf;
+    --accent-light: #3da5e0;
+    --accent-dim: rgba(10, 122, 191, 0.15);
+    --bg: #f4f6f8;
+    --ink: #1a2a3a;
+    --ink-light: #4a6a7a;
+    --red-accent: #c0392b;
+    --paper: #fafbfc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    font-family: 'Barlow', sans-serif;
+    color: var(--ink);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .blueprint-bg {
+    position: fixed; inset: 0; z-index: 0;
+    background:
+      linear-gradient(var(--grid-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+      linear-gradient(var(--grid-strong) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-strong) 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+    opacity: 0.7;
+  }
+
+  .container {
+    position: relative; z-index: 1;
+    max-width: 1400px; margin: 0 auto; padding: 40px 40px 80px;
+  }
+
+  /* Title Block */
+  .title-block { border: 2px solid var(--ink); margin-bottom: 48px; background: var(--paper); }
+  .title-block-inner { display: grid; grid-template-columns: 1fr auto; }
+  .title-main { padding: 28px 36px 24px; border-right: 2px solid var(--ink); }
+  .title-main h1 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 42px; letter-spacing: 3px; text-transform: uppercase; color: var(--ink); line-height: 1; margin-bottom: 6px; }
+  .title-main .subtitle { font-family: 'Share Tech Mono', monospace; font-size: 13px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+  .title-meta { display: flex; flex-direction: column; min-width: 260px; }
+  .title-meta-row { display: flex; border-bottom: 1px solid var(--ink); flex: 1; }
+  .title-meta-row:last-child { border-bottom: none; }
+  .meta-label { font-family: 'Share Tech Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-light); padding: 8px 14px; border-right: 1px solid var(--ink); min-width: 90px; display: flex; align-items: center; }
+  .meta-value { font-family: 'Share Tech Mono', monospace; font-size: 12px; color: var(--ink); padding: 8px 14px; display: flex; align-items: center; font-weight: 500; }
+
+  /* Section Headers */
+  .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; margin-top: 56px; }
+  .section-number { font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--accent); background: var(--accent-dim); padding: 4px 10px; border: 1px solid var(--accent); letter-spacing: 1px; }
+  .section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px; text-transform: uppercase; letter-spacing: 2px; color: var(--ink); }
+  .section-line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--ink) 0%, transparent 100%); }
+
+  /* Photo Grid */
+  .photo-grid { display: grid; gap: 16px; }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .photo-card {
+    background: var(--paper);
+    border: 1.5px solid rgba(26, 42, 58, 0.25);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .photo-card:hover { border-color: var(--accent); box-shadow: 0 4px 20px rgba(10, 122, 191, 0.12); transform: translateY(-2px); }
+
+  .photo-card .image-area {
+    width: 100%; aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #e8edf2 0%, #d5dde5 100%);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .photo-card .image-area .placeholder-icon { opacity: 0.3; }
+  .photo-card .image-area img {
+    position: absolute; top: 0; left: 0; transform-origin: 0 0;
+    user-select: none; -webkit-user-drag: none; pointer-events: none;
+  }
+
+  .photo-card .card-label {
+    font-family: 'Share Tech Mono', monospace; font-size: 30px; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--ink-light); padding: 10px 14px;
+    border-top: 1px solid rgba(26, 42, 58, 0.15); background: var(--paper);
+  }
+  .photo-card .card-label a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(10, 122, 191, 0.3);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .photo-card .card-label a:hover {
+    color: var(--accent-light);
+    border-bottom-color: var(--accent-light);
+  }
+  .photo-card .card-label .tag { display: inline-block; background: var(--accent-dim); color: var(--accent); padding: 2px 6px; margin-left: 6px; font-size: 9px; border: 1px solid rgba(10, 122, 191, 0.2); }
+
+  .featured-card { grid-column: 1 / -1; }
+  .featured-card .image-area { aspect-ratio: 16/7; }
+
+  /* Category accents */
+  .cat-robotics { border-left: 3px solid var(--accent); }
+  .cat-mechanisms { border-left: 3px solid #e67e22; }
+  .cat-electronics { border-left: 3px solid #27ae60; }
+  .cat-software { border-left: 3px solid #8e44ad; }
+  .cat-structural { border-left: 3px solid var(--red-accent); }
+  .cat-research { border-left: 3px solid #2c3e50; }
+
+  /* Legend - Topic Names */
+  .legend { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 12px; margin-bottom: 32px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-family: 'Share Tech Mono', monospace; font-size: 31px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.5px; }
+  .legend-swatch { width: 16px; height: 3px; }
+
+  /* Stats bar */
+  .stats-bar { display: grid; grid-template-columns: repeat(6, 1fr); border: 1.5px solid rgba(26, 42, 58, 0.25); background: var(--paper); margin-bottom: 40px; }
+  .stat-item { padding: 16px 20px; border-right: 1px solid rgba(26, 42, 58, 0.12); text-align: center; }
+  .stat-item:last-child { border-right: none; }
+  .stat-number { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 28px; color: var(--accent); line-height: 1; }
+  .stat-label { font-family: 'Share Tech Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-light); margin-top: 4px; }
+
+  /* Remove button */
+  .remove-btn { position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(26,42,58,0.3); background: rgba(255,255,255,0.9); color: var(--red-accent); font-size: 16px; line-height: 22px; text-align: center; cursor: pointer; opacity: 0; transition: opacity 0.2s; z-index: 3; padding: 0; }
+  .photo-card .image-area:hover .remove-btn { opacity: 1; }
+  .remove-btn:hover { background: var(--red-accent); color: white; border-color: var(--red-accent); }
+
+  /* Hint */
+  .reposition-hint { position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%); font-family: 'Share Tech Mono', monospace; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: white; background: rgba(0,0,0,0.55); padding: 3px 10px; border-radius: 2px; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 3; white-space: nowrap; }
+  .photo-card .image-area:hover .reposition-hint { opacity: 1; }
+
+  /* Corner marks */
+  .corner-mark { position: fixed; font-family: 'Share Tech Mono', monospace; font-size: 9px; color: rgba(26, 42, 58, 0.25); letter-spacing: 1px; z-index: 2; }
+  .corner-mark.tl { top: 12px; left: 16px; }
+  .corner-mark.tr { top: 12px; right: 16px; }
+  .corner-mark.bl { bottom: 12px; left: 16px; }
+  .corner-mark.br { bottom: 12px; right: 16px; }
+
+  /* Revision */
+  .revision-block { margin-top: 64px; border: 1.5px solid rgba(26, 42, 58, 0.3); background: var(--paper); }
+  .revision-header { font-family: 'Share Tech Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); padding: 10px 20px; border-bottom: 1px solid rgba(26, 42, 58, 0.2); background: rgba(70, 130, 180, 0.04); }
+  .revision-table { width: 100%; border-collapse: collapse; font-family: 'Share Tech Mono', monospace; font-size: 11px; }
+  .revision-table th { text-align: left; padding: 8px 20px; border-bottom: 1px solid rgba(26, 42, 58, 0.15); border-right: 1px solid rgba(26, 42, 58, 0.1); color: var(--ink-light); font-weight: 400; text-transform: uppercase; letter-spacing: 0.5px; font-size: 9px; }
+  .revision-table td { padding: 8px 20px; border-bottom: 1px solid rgba(26, 42, 58, 0.08); border-right: 1px solid rgba(26, 42, 58, 0.08); color: var(--ink); }
+
+  /* Export button — editor only */
+  #export-btn { position: fixed; bottom: 24px; right: 24px; z-index: 100; font-family: 'Share Tech Mono', monospace; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: white; background: var(--ink); border: 2px solid var(--accent); padding: 12px 24px; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+  #export-btn:hover { background: var(--accent); border-color: var(--accent-light); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(10, 122, 191, 0.3); }
+  #export-btn:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .stats-bar { grid-template-columns: repeat(3, 1fr); }
+    .title-block-inner { grid-template-columns: 1fr; }
+    .title-main { border-right: none; border-bottom: 2px solid var(--ink); }
+    .container { padding: 20px; }
+    .title-main h1 { font-size: 30px; }
+  }
+
+  @media (max-width: 600px) {
+    .grid-3, .grid-4, .grid-2 { grid-template-columns: 1fr; }
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .title-main h1 { font-size: 24px; letter-spacing: 1px; }
+    .featured-card { grid-column: 1; }
+    .featured-card .image-area { aspect-ratio: 4/3; }
+    .corner-mark { display: none; }
+  }
+
+  @media print {
+    .blueprint-bg, .corner-mark, #export-btn { display: none; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body>
+
+<div class="blueprint-bg"></div>
+
+<div class="corner-mark tl">DWG-001 REV.F</div>
+<div class="corner-mark tr">SCALE: NTS</div>
+<div class="corner-mark bl">ARCHIVE — PERSONAL</div>
+<div class="corner-mark br">SHEET 1 OF 1</div>
+
+<div class="container">
+
+  <!-- TITLE BLOCK -->
+  <div class="title-block">
+    <div class="title-block-inner">
+      <div class="title-main">
+        <h1>Engineering Portfolio</h1>
+        <div class="subtitle">Mechanisms · Electronics · Robotics · Software · Research</div>
+      </div>
+      <div class="title-meta">
+        <div class="title-meta-row"><div class="meta-label">Drawn by</div><div class="meta-value">Vaibhav</div></div>
+        <div class="title-meta-row"><div class="meta-label">Date</div><div class="meta-value">2025</div></div>
+        <div class="title-meta-row"><div class="meta-label">Status</div><div class="meta-value">Archive</div></div>
+        <div class="title-meta-row"><div class="meta-label">Sheet</div><div class="meta-value">1 of 1</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:#0a7abf"></div>Robotics</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#e67e22"></div>Mechanisms</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#27ae60"></div>Electronics</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#8e44ad"></div>Software</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#c0392b"></div>Structural</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#2c3e50"></div>Research</div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-number">6</div><div class="stat-label">Categories</div></div>
+    <div class="stat-item"><div class="stat-number">30+</div><div class="stat-label">Projects</div></div>
+    <div class="stat-item"><div class="stat-number">5+</div><div class="stat-label">Platforms</div></div>
+    <div class="stat-item"><div class="stat-number">3</div><div class="stat-label">Publications</div></div>
+    <div class="stat-item"><div class="stat-number">∞</div><div class="stat-label">Hours</div></div>
+    <div class="stat-item"><div class="stat-number">1</div><div class="stat-label">Startup</div></div>
+  </div>
+
+  <!-- SEC 01 — ROBOTICS -->
+  <div class="section-header"><div class="section-number">SEC 01</div><div class="section-title">Robotics & Autonomous Systems</div><div class="section-line"></div></div>
+  <div class="photo-grid grid-3">
+    <div class="photo-card cat-robotics featured-card"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Pluton — Mission Control Dashboard</a> <span class="tag">Active</span></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Tracked Rover Platform</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="https://github.com/vbwanere/Academic-Projects/tree/main/Pick-and-place-using-Franka-Panda-arm" target="_blank">Pick & Place — Franka Panda Arm</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Early Rover Build v1</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Early Rover Build v2</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Industrial Robot — Lab Setup</a></div></div>
+  </div>
+
+  <!-- SEC 02 — MECHANISMS -->
+  <div class="section-header"><div class="section-number">SEC 02</div><div class="section-title">Mechanisms & Mechanical Design</div><div class="section-line"></div></div>
+  <div class="photo-grid grid-4">
+    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Cam & Follower Mechanism</a></div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Flat Spring & Follower Assembly</a></div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Deployable Mechanism — Propeller</a></div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">UDL Beam Analysis</a></div></div>
+  </div>
+
+  <!-- SEC 03 — ELECTRONICS -->
+  <div class="section-header"><div class="section-number">SEC 03</div><div class="section-title">Electronics & Embedded Systems</div><div class="section-line"></div></div>
+  <div class="photo-grid grid-4">
+    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">PCB & Microcontroller Board</a></div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Wire Bonding & Epoxy Process</a></div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Circuit Schematic</a></div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Breadboard Prototyping</a></div></div>
+  </div>
+
+  <!-- SEC 04 — SOFTWARE -->
+  <div class="section-header"><div class="section-number">SEC 04</div><div class="section-title">Software & Simulation</div><div class="section-line"></div></div>
+  <div class="photo-grid grid-3">
+    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">ROS 2 / Isaac Sim Integration</a></div></div>
+    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Kinematics Code — Python</a></div></div>
+    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Dimensionless Trajectories — MATLAB</a></div></div>
+  </div>
+
+  <!-- SEC 05 — STRUCTURAL -->
+  <div class="section-header"><div class="section-number">SEC 05</div><div class="section-title">Structural Design & Fabrication</div><div class="section-line"></div></div>
+  <div class="photo-grid grid-3">
+    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Test Bed Frame — CAD Model</a></div></div>
+    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Test Bed — Fabricated</a></div></div>
+    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Engineering Drawings — Hand Sketch</a></div></div>
+  </div>
+
+  <!-- SEC 06 — RESEARCH -->
+  <div class="section-header"><div class="section-number">SEC 06</div><div class="section-title">Research & Publications</div><div class="section-line"></div></div>
+  <div class="photo-grid grid-3">
+    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Nanosatellite — IAC Publication</a></div></div>
+    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">MEMS / Wedge Bond Microscopy</a></div></div>
+    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><div class="card-label"><a href="#" target="_blank">Team — Lab & Conference</a></div></div>
+  </div>
+
+  <!-- REVISION BLOCK -->
+  <div class="revision-block">
+    <div class="revision-header">Revision History</div>
+    <table class="revision-table">
+      <thead><tr><th style="width:60px">Rev</th><th style="width:120px">Date</th><th>Description</th><th style="width:100px">By</th></tr></thead>
+      <tbody>
+        <tr><td>A</td><td>2025</td><td>Initial collage — yellow background, freeform layout</td><td>VK</td></tr>
+        <tr><td>B</td><td>2025</td><td>Grid background added — blueprint aesthetic</td><td>VK</td></tr>
+        <tr><td>C</td><td>2025</td><td>Structured layout — categorized sections, title block</td><td>VK + Claude</td></tr>
+        <tr><td>D</td><td>2025</td><td>Image upload with pan/zoom crop</td><td>VK + Claude</td></tr>
+        <tr><td>E</td><td>2026</td><td>Freeform canvas (reverted)</td><td>VK + Claude</td></tr>
+        <tr><td>F</td><td>2026</td><td>Hardcoded grid, image crop, responsive, static export</td><td>VK + Claude</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<button id="export-btn" onclick="exportForGitHub()">Export for GitHub</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const IMAGES_KEY = 'portfolio-images';
+const PLACEHOLDER_SVG = '<svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>';
+const imageData = {}; // index → { src, scale, x, y }
+
+// ═══ PERSISTENCE ═══
+function saveSlot(i) { try { const s=JSON.parse(localStorage.getItem(IMAGES_KEY)||'{}'); if(imageData[i])s[i]=imageData[i]; else delete s[i]; localStorage.setItem(IMAGES_KEY,JSON.stringify(s)); } catch{} }
+function loadAll() { try { Object.assign(imageData, JSON.parse(localStorage.getItem(IMAGES_KEY)||'{}')); } catch{} }
+
+// ═══ IMAGE TRANSFORM ═══
+function coverFit(iw,ih,aw,ah){ const s=Math.max(aw/iw,ah/ih); return {scale:s, x:(aw-iw*s)/2, y:(ah-ih*s)/2}; }
+function renderXf(img,d){ img.style.transform=`translate(${d.x}px,${d.y}px) scale(${d.scale})`; }
+function clampPos(d,iw,ih,aw,ah){ const sw=iw*d.scale, sh=ih*d.scale; d.x=sw<=aw?(aw-sw)/2:Math.min(0,Math.max(aw-sw,d.x)); d.y=sh<=ah?(ah-sh)/2:Math.min(0,Math.max(ah-sh,d.y)); }
+
+function setupImage(area, idx) {
+  const data = imageData[idx]; if(!data) return;
+  area.innerHTML = ''; area.style.cursor = 'grab';
+  const img = document.createElement('img');
+  img.src = data.src;
+  img.addEventListener('load', () => {
+    const aw=area.offsetWidth, ah=area.offsetHeight;
+    if(data.scale==null) Object.assign(data, coverFit(img.naturalWidth, img.naturalHeight, aw, ah));
+    clampPos(data, img.naturalWidth, img.naturalHeight, aw, ah);
+    renderXf(img, data); saveSlot(idx);
+  });
+  area.appendChild(img);
+
+  // Remove button
+  const rm=document.createElement('button'); rm.className='remove-btn'; rm.innerHTML='&times;';
+  rm.addEventListener('click', e => { e.stopPropagation(); e.preventDefault(); area.innerHTML=PLACEHOLDER_SVG; area.style.cursor='pointer'; delete imageData[idx]; saveSlot(idx); });
+  area.appendChild(rm);
+
+  // Hint
+  const hint=document.createElement('div'); hint.className='reposition-hint'; hint.textContent='Drag to pan · Scroll to zoom · Dbl-click to replace'; area.appendChild(hint);
+
+  // Pan
+  let dragging=false, sx, sy, ox, oy;
+  area.addEventListener('mousedown', e => {
+    if(e.target.classList.contains('remove-btn')||!imageData[idx]) return;
+    e.preventDefault(); dragging=true; sx=e.clientX; sy=e.clientY; ox=data.x; oy=data.y; area.style.cursor='grabbing';
+  });
+  window.addEventListener('mousemove', e => { if(!dragging) return; data.x=ox+(e.clientX-sx); data.y=oy+(e.clientY-sy); clampPos(data,img.naturalWidth,img.naturalHeight,area.offsetWidth,area.offsetHeight); renderXf(img,data); });
+  window.addEventListener('mouseup', () => { if(dragging){dragging=false; area.style.cursor='grab'; saveSlot(idx);} });
+
+  // Touch pan
+  area.addEventListener('touchstart', e => { if(!imageData[idx]||e.touches.length!==1)return; dragging=true; sx=e.touches[0].clientX; sy=e.touches[0].clientY; ox=data.x; oy=data.y; }, {passive:true});
+  area.addEventListener('touchmove', e => { if(!dragging||e.touches.length!==1)return; e.preventDefault(); data.x=ox+(e.touches[0].clientX-sx); data.y=oy+(e.touches[0].clientY-sy); clampPos(data,img.naturalWidth,img.naturalHeight,area.offsetWidth,area.offsetHeight); renderXf(img,data); }, {passive:false});
+  area.addEventListener('touchend', () => { if(dragging){dragging=false; saveSlot(idx);} });
+
+  // Zoom
+  area.addEventListener('wheel', e => {
+    if(!imageData[idx]) return; e.preventDefault();
+    const aw=area.offsetWidth, ah=area.offsetHeight, minS=Math.min(aw/img.naturalWidth,ah/img.naturalHeight);
+    const rect=area.getBoundingClientRect(), cx=e.clientX-rect.left, cy=e.clientY-rect.top;
+    const oS=data.scale, f=e.deltaY<0?1.08:1/1.08;
+    data.scale=Math.max(minS, Math.min(oS*f, minS*10));
+    data.x=cx-(cx-data.x)*(data.scale/oS); data.y=cy-(cy-data.y)*(data.scale/oS);
+    clampPos(data,img.naturalWidth,img.naturalHeight,aw,ah); renderXf(img,data); saveSlot(idx);
+  }, {passive:false});
+}
+
+// ═══ WIRE UP ALL CARDS ═══
+const allAreas = [...document.querySelectorAll('.photo-card .image-area')];
+
+allAreas.forEach((area, idx) => {
+  // Click to upload (empty only)
+  area.addEventListener('click', e => {
+    if(e.target.classList.contains('remove-btn')||imageData[idx]) return;
+    const inp=document.createElement('input'); inp.type='file'; inp.accept='image/*';
+    inp.onchange=ev=>{ const f=ev.target.files[0]; if(!f)return; const r=new FileReader(); r.onload=re=>{imageData[idx]={src:re.target.result,scale:null,x:0,y:0}; setupImage(area,idx);}; r.readAsDataURL(f); };
+    inp.click();
+  });
+
+  // Dbl-click to replace
+  area.addEventListener('dblclick', e => {
+    if(e.target.classList.contains('remove-btn')) return;
+    const inp=document.createElement('input'); inp.type='file'; inp.accept='image/*';
+    inp.onchange=ev=>{ const f=ev.target.files[0]; if(!f)return; const r=new FileReader(); r.onload=re=>{imageData[idx]={src:re.target.result,scale:null,x:0,y:0}; setupImage(area,idx);}; r.readAsDataURL(f); };
+    inp.click();
+  });
+
+  // Drag & drop
+  area.addEventListener('dragover', e => { e.preventDefault(); area.style.outline='2px dashed var(--accent)'; area.style.outlineOffset='-4px'; });
+  area.addEventListener('dragleave', () => { area.style.outline=''; });
+  area.addEventListener('drop', e => {
+    e.preventDefault(); area.style.outline='';
+    const f=e.dataTransfer.files[0]; if(f&&f.type.startsWith('image/')){const r=new FileReader();r.onload=re=>{imageData[idx]={src:re.target.result,scale:null,x:0,y:0};setupImage(area,idx);};r.readAsDataURL(f);}
+  });
+  area.style.cursor = 'pointer';
+});
+
+// ═══ INIT ═══
+loadAll();
+allAreas.forEach((area, idx) => { if(imageData[idx]) setupImage(area, idx); });
+
+// ═══ EXPORT ═══
+function getSlug(idx) {
+  const card = allAreas[idx]?.closest('.photo-card');
+  const label = card?.querySelector('.card-label')?.textContent?.trim()||'';
+  const clean = label.replace(/<[^>]*>/g,'').replace(/[^a-z0-9]+/gi,'-').replace(/^-|-$/g,'').toLowerCase();
+  return String(idx).padStart(2,'0') + '-' + (clean||'image');
+}
+
+async function exportForGitHub() {
+  const btn=document.getElementById('export-btn'); btn.textContent='PACKAGING…'; btn.disabled=true;
+  try {
+    const zip=new JSZip(), imgF=zip.folder('images'), imgMap={};
+
+    // Render cropped images to canvas
+    await Promise.all(allAreas.map((area, idx) => {
+      const d=imageData[idx]; if(!d) return;
+      return new Promise(res => {
+        const img=new Image(); img.onload=()=>{
+          const aw=area.offsetWidth, ah=area.offsetHeight, cv=document.createElement('canvas');
+          cv.width=aw*2; cv.height=ah*2; const ctx=cv.getContext('2d'); ctx.scale(2,2);
+          ctx.fillStyle='#dde3ea'; ctx.fillRect(0,0,aw,ah);
+          ctx.drawImage(img, d.x, d.y, img.naturalWidth*d.scale, img.naturalHeight*d.scale);
+          cv.toBlob(blob=>{ const fn=getSlug(idx)+'.jpg'; imgF.file(fn,blob); imgMap[idx]='images/'+fn; res(); }, 'image/jpeg', 0.92);
+        }; img.src=d.src;
+      });
+    }));
+
+    // Clone and clean — fully static, no JS
+    const clone=document.documentElement.cloneNode(true);
+    clone.querySelectorAll('script, #export-btn, script[src*="jszip"]').forEach(s=>s.remove());
+
+    clone.querySelectorAll('.photo-card .image-area').forEach((area, idx) => {
+      area.querySelectorAll('.remove-btn,.reposition-hint').forEach(b=>b.remove());
+      area.removeAttribute('style');
+      if(imgMap[idx]) {
+        const alt=area.closest('.photo-card')?.querySelector('.card-label')?.textContent?.trim()||'';
+        area.innerHTML='<img src="'+imgMap[idx]+'" alt="'+alt+'" style="width:100%;height:100%;object-fit:cover;position:static;">';
+      } else {
+        area.innerHTML=PLACEHOLDER_SVG;
+      }
+    });
+
+    zip.file('index.html', '<!DOCTYPE html>\n<html lang="en">\n'+clone.innerHTML+'\n</html>');
+    const blob=await zip.generateAsync({type:'blob'}), a=document.createElement('a');
+    a.href=URL.createObjectURL(blob); a.download='portfolio.zip'; a.click(); URL.revokeObjectURL(a.href);
+  } catch(e){ console.error(e); alert('Export failed: '+e.message); }
+  btn.textContent='EXPORT FOR GITHUB'; btn.disabled=false;
+}
+</script>
+</body>
+</html>

@@ -90,9 +90,19 @@
   }
 
   .photo-card .card-label {
-    font-family: 'Share Tech Mono', monospace; font-size: 10px; letter-spacing: 1px;
+    font-family: 'Share Tech Mono', monospace; font-size: 30px; letter-spacing: 1px;
     text-transform: uppercase; color: var(--ink-light); padding: 10px 14px;
     border-top: 1px solid rgba(26, 42, 58, 0.15); background: var(--paper);
+  }
+  .photo-card .card-label a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(10, 122, 191, 0.3);
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .photo-card .card-label a:hover {
+    color: var(--accent-light);
+    border-bottom-color: var(--accent-light);
   }
   .photo-card .card-label .tag { display: inline-block; background: var(--accent-dim); color: var(--accent); padding: 2px 6px; margin-left: 6px; font-size: 9px; border: 1px solid rgba(10, 122, 191, 0.2); }
 
@@ -107,9 +117,9 @@
   .cat-structural { border-left: 3px solid var(--red-accent); }
   .cat-research { border-left: 3px solid #2c3e50; }
 
-  /* Legend */
+  /* Legend - Topic Names */
   .legend { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 12px; margin-bottom: 32px; }
-  .legend-item { display: flex; align-items: center; gap: 8px; font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.5px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-family: 'Share Tech Mono', monospace; font-size: 31px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.5px; }
   .legend-swatch { width: 16px; height: 3px; }
 
   /* Stats bar */
@@ -222,54 +232,54 @@
   <!-- SEC 01 — ROBOTICS -->
   <div class="section-header"><div class="section-number">SEC 01</div><div class="section-title">Robotics &amp; Autonomous Systems</div><div class="section-line"></div></div>
   <div class="photo-grid grid-3">
-    <div class="photo-card cat-robotics featured-card"><div class="image-area"><img src="images/00-pluton-mission-control-dashboard-active.jpg" alt="Pluton — Mission Control Dashboard Active" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label">Pluton — Mission Control Dashboard <span class="tag">Active</span></div></div>
-    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Tracked Rover Platform</div></div>
-    <div class="photo-card cat-robotics"><div class="image-area"><img src="images/02-pick-place-franka-panda-arm.jpg" alt="Pick &amp; Place — Franka Panda Arm" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label">Pick &amp; Place — Franka Panda Arm</div></div>
-    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Early Rover Build v1</div></div>
-    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Early Rover Build v2</div></div>
-    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Industrial Robot — Lab Setup</div></div>
+    <div class="photo-card cat-robotics featured-card"><div class="image-area"><img src="images/00-pluton-mission-control-dashboard-active.jpg" alt="Pluton — Mission Control Dashboard Active" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Pluton — Mission Control Dashboard</a> <span class="tag">Active</span></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Tracked Rover Platform</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="https://github.com/vbwanere/Academic-Projects/tree/main/Pick-and-place-using-Franka-Panda-arm" target="_blank">Pick &amp; Place — Franka Panda Arm</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><img src="images/03-early-rover-build-v1.jpg" alt="Early Rover Build v1" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Early Rover Build v1</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Early Rover Build v2</a></div></div>
+    <div class="photo-card cat-robotics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Industrial Robot — Lab Setup</a></div></div>
   </div>
 
   <!-- SEC 02 — MECHANISMS -->
   <div class="section-header"><div class="section-number">SEC 02</div><div class="section-title">Mechanisms &amp; Mechanical Design</div><div class="section-line"></div></div>
   <div class="photo-grid grid-4">
-    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Cam &amp; Follower Mechanism</div></div>
-    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Flat Spring &amp; Follower Assembly</div></div>
-    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Deployable Mechanism — Propeller</div></div>
-    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">UDL Beam Analysis</div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><img src="images/06-cam-follower-mechanism.jpg" alt="Cam &amp; Follower Mechanism" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Cam &amp; Follower Mechanism</a></div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><img src="images/07-flat-spring-follower-assembly.jpg" alt="Flat Spring &amp; Follower Assembly" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Flat Spring &amp; Follower Assembly</a></div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Deployable Mechanism — Propeller</a></div></div>
+    <div class="photo-card cat-mechanisms"><div class="image-area"><img src="images/09-udl-beam-analysis.jpg" alt="UDL Beam Analysis" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">UDL Beam Analysis</a></div></div>
   </div>
 
   <!-- SEC 03 — ELECTRONICS -->
   <div class="section-header"><div class="section-number">SEC 03</div><div class="section-title">Electronics &amp; Embedded Systems</div><div class="section-line"></div></div>
   <div class="photo-grid grid-4">
-    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">PCB &amp; Microcontroller Board</div></div>
-    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Wire Bonding &amp; Epoxy Process</div></div>
-    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Circuit Schematic</div></div>
-    <div class="photo-card cat-electronics"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Breadboard Prototyping</div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><img src="images/10-pcb-microcontroller-board.jpg" alt="PCB &amp; Microcontroller Board" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">PCB &amp; Microcontroller Board</a></div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><img src="images/11-wire-bonding-epoxy-process.jpg" alt="Wire Bonding &amp; Epoxy Process" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Wire Bonding &amp; Epoxy Process</a></div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><img src="images/12-circuit-schematic.jpg" alt="Circuit Schematic" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Circuit Schematic</a></div></div>
+    <div class="photo-card cat-electronics"><div class="image-area"><img src="images/13-breadboard-prototyping.jpg" alt="Breadboard Prototyping" style="width:100%;height:100%;object-fit:cover;position:static;"></div><div class="card-label"><a href="#" target="_blank">Breadboard Prototyping</a></div></div>
   </div>
 
   <!-- SEC 04 — SOFTWARE -->
   <div class="section-header"><div class="section-number">SEC 04</div><div class="section-title">Software &amp; Simulation</div><div class="section-line"></div></div>
   <div class="photo-grid grid-3">
-    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">ROS 2 / Isaac Sim Integration</div></div>
-    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Kinematics Code — Python</div></div>
-    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Dimensionless Trajectories — MATLAB</div></div>
+    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">ROS 2 / Isaac Sim Integration</a></div></div>
+    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Kinematics Code — Python</a></div></div>
+    <div class="photo-card cat-software"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Dimensionless Trajectories — MATLAB</a></div></div>
   </div>
 
   <!-- SEC 05 — STRUCTURAL -->
   <div class="section-header"><div class="section-number">SEC 05</div><div class="section-title">Structural Design &amp; Fabrication</div><div class="section-line"></div></div>
   <div class="photo-grid grid-3">
-    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Test Bed Frame — CAD Model</div></div>
-    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Test Bed — Fabricated</div></div>
-    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Engineering Drawings — Hand Sketch</div></div>
+    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Test Bed Frame — CAD Model</a></div></div>
+    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Test Bed — Fabricated</a></div></div>
+    <div class="photo-card cat-structural"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Engineering Drawings — Hand Sketch</a></div></div>
   </div>
 
   <!-- SEC 06 — RESEARCH -->
   <div class="section-header"><div class="section-number">SEC 06</div><div class="section-title">Research &amp; Publications</div><div class="section-line"></div></div>
   <div class="photo-grid grid-3">
-    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Nanosatellite — IAC Publication</div></div>
-    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">MEMS / Wedge Bond Microscopy</div></div>
-    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label">Team — Lab &amp; Conference</div></div>
+    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Nanosatellite — IAC Publication</a></div></div>
+    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">MEMS / Wedge Bond Microscopy</a></div></div>
+    <div class="photo-card cat-research"><div class="image-area"><svg class="placeholder-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(26,42,58,0.25)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div><div class="card-label"><a href="#" target="_blank">Team — Lab &amp; Conference</a></div></div>
   </div>
 
   <!-- REVISION BLOCK -->

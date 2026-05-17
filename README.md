@@ -29,8 +29,7 @@
 <table>
 <tr>
 <td>
-![Pick-Place](assets/pick-place.gif)
-<!-- <img src="https://github.com/vbwanere/vbwanere/blob/main/assets/pick-place.mp4" alt="Pick-Place" width="400"/> -->
+<img src="assets/pick-place.gif" alt="Pick-Place" width="400"/>
 </td>
 
 <td width="60%">

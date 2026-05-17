@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/vbwanere/vbwanere/blob/main/DSCF1747.jpg" height="400"/>
+  <img src="assets/pick-place.gif" height="400"/>
 </p>
 <!-- <hr> -->
 <h1 align="center">Welcome, fellow coders!</h1>

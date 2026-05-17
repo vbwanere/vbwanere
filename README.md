@@ -29,7 +29,7 @@
 <table>
 <tr>
 <td>
-<img src="https://github.com/vbwanere/Academic-Projects/blob/main/Pick-and-place-using-Franka-Panda-arm/doc/PickPlacePostarImage.png" alt="Die-Attach" width="400"/>
+<img src="https://github.com/vbwanere/vbwanere/blob/main/assets/pick-place.mp4" alt="Pick-Place" width="400"/>
 </td>
 
 <td width="60%">

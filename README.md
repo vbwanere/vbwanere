@@ -29,7 +29,9 @@
 <table>
 <tr>
 <td>
-<img src="https://github.com/vbwanere/vbwanere/blob/main/assets/pick-place.mp4" alt="Pick-Place" width="400"/>
+<video src="https://github.com/vbwanere/vbwanere/blob/main/assets/pick-place-web.mp4" width="100%" controls muted>
+</video>
+<!-- <img src="https://github.com/vbwanere/vbwanere/blob/main/assets/pick-place.mp4" alt="Pick-Place" width="400"/> -->
 </td>
 
 <td width="60%">
